@@ -1,18 +1,34 @@
 # Cut the Rope · 割绳子 HTML5
 
+🎮 **Live Demo / 在线游玩**: [https://atbfun.github.io/cutrope/](https://atbfun.github.io/cutrope/)
+
 将 `source/cutrope/cutrope.swf` 的 50 个原始关卡、角色、场景及音效迁移为无运行时第三方依赖的 HTML5 Canvas 游戏。支持鼠标、触屏、桌面和手机；无需 Flash，无需构建。
 
 ## 运行
 
-直接用浏览器打开 `web/index.html`，或在仓库根目录运行：
+### 在线体验
+访问 GitHub Pages 在线游玩：**[https://atbfun.github.io/cutrope/](https://atbfun.github.io/cutrope/)**
+
+### 本地运行
+直接用浏览器打开 `cutrope/web/index.html`，或在仓库根目录运行：
 
 ```sh
-python3 target/cutrope/analysis/serve.py
+python3 cutrope/analysis/serve.py
 ```
 
 访问 **http://127.0.0.1:8765**。服务器仅绑定本机，使用多线程静态 HTTP。
 
-保留完整的 `cutrope` 文件夹，包括 `assets/`。`web/assets` 是指向 `../assets` 的相对符号链接；加载器也会尝试 `../assets/`。部署时可将 `assets/` 复制到 `web/assets/` 替代符号链接，再将 `web/` 作为站点根目录。
+保留完整的 `cutrope` 文件夹，包括 `assets/`。`web/assets` 与 `assets/` 保持同步。在 GitHub Actions 自动化构建中，工作流会自动将 web 核心与完整 assets 打包到发布目录。
+
+## GitHub Pages 部署
+
+本项目已配置自动化 GitHub Actions 部署工作流（`.github/workflows/deploy-pages.yml`），推送到 `main` 分支即可自动打包并发布至 GitHub Pages。
+
+**首次启用步骤：**
+1. 进入 GitHub 仓库设置：**Settings** -> **Pages**
+2. 在 **Build and deployment** 的 **Source** 下拉菜单选择 **GitHub Actions**
+3. 待工作流执行完毕后，即可通过 [https://atbfun.github.io/cutrope/](https://atbfun.github.io/cutrope/) 在线游玩
+
 
 ## 玩法
 
@@ -41,9 +57,9 @@ python3 target/cutrope/analysis/serve.py
 ## 验证
 
 ```sh
-node --test target/cutrope/tests/physics.test.cjs
+node --test cutrope/tests/physics.test.cjs
 # 浏览器测试需要开发环境安装 Playwright 与 Chrome，不是游戏依赖：
-NODE_PATH=/path/to/node_modules node target/cutrope/tests/browser.cjs
+NODE_PATH=/path/to/node_modules node cutrope/tests/browser.cjs
 ```
 
 `CHROME_PATH` 可指定其他 Chrome/Chromium；不指定时先尝试 macOS Chrome，再尝试 Playwright 自带 Chromium。报告和截图保存在 `analysis/`。
@@ -57,11 +73,11 @@ NODE_PATH=/path/to/node_modules node target/cutrope/tests/browser.cjs
 需要 Python 与 Pillow。项目 conda 环境 `ATBPort` 已存在，但本次检查发现未安装 Pillow；本次资产提取使用已有的 `/opt/homebrew/anaconda3/bin/python`。
 
 ```sh
-python target/cutrope/analysis/extract_swf.py
+python cutrope/analysis/extract_swf.py
 # 另用 FFDec 26.3.0 导出合成糖果：
 java -Djava.awt.headless=true -jar /path/to/ffdec.jar -selectid 823 \
   -export sprite /tmp/cutrope-sprites source/cutrope/cutrope.swf
-python target/cutrope/analysis/import_candy_sprite.py /tmp/cutrope-sprites
+python cutrope/analysis/import_candy_sprite.py /tmp/cutrope-sprites
 ```
 
 反编译命令与原始文件 SHA-256 见 `analysis/reverse_engineering_report.md`。原文件未修改，游戏资产与原作归其原权利人所有。
