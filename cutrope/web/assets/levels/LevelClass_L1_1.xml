@@ -1,0 +1,56 @@
+<map>
+<layer name="settings">
+<map gridSize="32" width="320" height="480" />
+<gameDesign ropePhysicsSpeed="1.0" special="1" twoParts="false" />
+</layer>
+<layer name="Objects">
+<candy x="156" y="139" />
+<grab x="159" y="51" length="90" wheel="false" gun="false" kickable="false" radius="-1" invisible="false" moveLength="-1" moveVertical="false" moveOffset="0" spider="false" part="L" />
+<target x="161" y="433" />
+<star x="162" y="236" timeout="-1" />
+<star x="161" y="301" timeout="-1" />
+<star x="161" y="367" timeout="-1" />
+<tutorialText x="177" y="31" locale="en" text="点击并滑动鼠标即可切断绳子" width="130" />
+<tutorialText x="182" y="335" locale="en" text="将糖果送给 OmNom" width="130" />
+<tutorial01 x="57" y="119" locale="en" moveSpeed="100" rotateSpeed="100" />
+<tutorial04 x="231" y="416" locale="en" moveSpeed="100" rotateSpeed="100" />
+<tutorial01 x="109" y="119" locale="en" moveSpeed="100" rotateSpeed="100" />
+<tutorial01 x="161" y="119" locale="en" moveSpeed="100" rotateSpeed="100" />
+<tutorial01 x="213" y="119" locale="en" moveSpeed="100" rotateSpeed="100" />
+<tutorial01 x="265" y="119" locale="en" moveSpeed="100" rotateSpeed="100" />
+<tutorial10 x="61" y="180" locale="en" moveSpeed="100" rotateSpeed="100" special="2" />
+</layer>
+<layer name="Ru">
+<tutorial10 x="60" y="179" locale="ru" moveSpeed="100" rotateSpeed="100" special="2" />
+<tutorial01 x="109" y="119" locale="ru" moveSpeed="100" rotateSpeed="100" />
+<tutorial01 x="57" y="119" locale="ru" moveSpeed="100" rotateSpeed="100" />
+<tutorial01 x="161" y="119" locale="ru" moveSpeed="100" rotateSpeed="100" />
+<tutorial01 x="213" y="119" locale="ru" moveSpeed="100" rotateSpeed="100" />
+<tutorial01 x="265" y="119" locale="ru" moveSpeed="100" rotateSpeed="100" />
+<tutorialText x="177" y="25" locale="ru" text="Перережьте веревку движением пальца" width="130" />
+<tutorial04 x="231" y="415" locale="ru" moveSpeed="100" rotateSpeed="100" />
+<tutorialText x="196" y="314" locale="ru" text="Доставьте леденец АмНяму" width="100" />
+</layer>
+<layer name="Fr">
+<tutorial10 x="60" y="180" locale="fr" moveSpeed="100" rotateSpeed="100" special="2" />
+<tutorial01 x="109" y="119" locale="fr" moveSpeed="100" rotateSpeed="100" />
+<tutorial01 x="57" y="119" locale="fr" moveSpeed="100" rotateSpeed="100" />
+<tutorial01 x="161" y="119" locale="fr" moveSpeed="100" rotateSpeed="100" />
+<tutorial01 x="213" y="119" locale="fr" moveSpeed="100" rotateSpeed="100" />
+<tutorial01 x="265" y="119" locale="fr" moveSpeed="100" rotateSpeed="100" />
+<tutorialText x="176" y="19" locale="fr" text="Faites glisser votre doigt pour couper la corde" width="130" />
+<tutorial04 x="231" y="415" locale="fr" moveSpeed="100" rotateSpeed="100" />
+<tutorialText x="196" y="311" locale="fr" text="Offrez des bonbons à Om Nom" width="100" />
+</layer>
+<layer name="De">
+<tutorial10 x="60" y="180" locale="de" moveSpeed="100" rotateSpeed="100" special="2" />
+<tutorial01 x="108" y="120" locale="de" moveSpeed="100" rotateSpeed="100" />
+<tutorial01 x="56" y="120" locale="de" moveSpeed="100" rotateSpeed="100" />
+<tutorial01 x="160" y="120" locale="de" moveSpeed="100" rotateSpeed="100" />
+<tutorial01 x="212" y="120" locale="de" moveSpeed="100" rotateSpeed="100" />
+<tutorial01 x="264" y="120" locale="de" moveSpeed="100" rotateSpeed="100" />
+<tutorialText x="179" y="21" locale="de" text="Schneiden Sie die Leine mit Fingerbewegung durch" width="120" />
+<tutorial04 x="231" y="416" locale="de" moveSpeed="100" rotateSpeed="100" />
+<tutorialText x="193" y="312" locale="de" text="Bringen Sie den Kandis dem Om Nom" width="110" />
+</layer>
+</map>

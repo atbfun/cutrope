@@ -1,0 +1,31 @@
+<map>
+<layer name="settings">
+<map gridSize="32" width="320" height="480" />
+<gameDesign ropePhysicsSpeed="1.0" special="1" twoParts="false" />
+</layer>
+<layer name="Objects">
+<target x="264" y="430" />
+<grab x="88" y="189" length="100" wheel="false" gun="false" kickable="false" radius="45" invisible="false" moveLength="-1" moveVertical="false" moveOffset="0" spider="false" part="L" />
+<grab x="216" y="352" length="100" wheel="false" gun="false" kickable="false" radius="45" invisible="false" moveLength="-1" moveVertical="false" moveOffset="0" spider="false" part="L" />
+<grab x="152" y="270" length="100" wheel="false" gun="false" kickable="false" radius="45" invisible="false" moveLength="-1" moveVertical="false" moveOffset="0" spider="false" part="L" />
+<candy x="39" y="110" />
+<star x="84" y="270" timeout="-1" />
+<star x="204" y="432" timeout="-1" />
+<star x="148" y="354" timeout="-1" />
+<grab x="42" y="43" length="50" wheel="false" gun="false" kickable="false" radius="-1" invisible="false" moveLength="-1" moveVertical="false" moveOffset="0" spider="false" part="L" />
+<tutorialText x="129" y="51" locale="en" text="当糖果进入他们领地时，自动绳就会出现" width="140" />
+<tutorial04 x="172" y="171" locale="en" moveSpeed="100" rotateSpeed="100" />
+</layer>
+<layer name="Ru">
+<tutorial04 x="172" y="171" locale="ru" moveSpeed="100" rotateSpeed="100" />
+<tutorialText x="81" y="66" locale="ru" text="Авто-веревки появляются когда леденец попадает в их радиус" width="220" />
+</layer>
+<layer name="Fr">
+<tutorialText x="54" y="40" locale="fr" text="Des cordes apparaissent lorsque le bonbon arrive dans leur zone" width="260" />
+<tutorial04 x="162" y="144" locale="fr" moveSpeed="100" rotateSpeed="100" />
+</layer>
+<layer name="De">
+<tutorialText x="99" y="47" locale="de" text="Die Leinen erscheinen automatisch, sobald der Kandis in ihren Bereich gelangt" width="180" />
+<tutorial04 x="172" y="170" locale="de" moveSpeed="100" rotateSpeed="100" />
+</layer>
+</map>

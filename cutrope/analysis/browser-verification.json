@@ -1,0 +1,56 @@
+{
+  "checks": [
+    "initial scene renders behind start card",
+    "initial canvas >=90% colored",
+    "scene draw fits the 16.7ms frame budget",
+    "real pointer swipe cuts rope and earns three stars",
+    "success overlay appears",
+    "next button enters original level 1-2",
+    "pause freezes physics",
+    "restart clears cuts and stars",
+    "second chapter has all 25 selectable levels",
+    "chapter selection loads original pumps",
+    "all 32 original MP3 sounds decode",
+    "muting stops active Web Audio sources",
+    "sound toggle cannot escape a game pause",
+    "late audio completion cannot start a paused effect",
+    "best stars survive reload",
+    "all 50 maps initialize and render",
+    "touch swipe cuts the rope",
+    "subpixel touch samples still cut a rope",
+    "390px viewport has no horizontal overflow",
+    "file protocol loads valid scene and images",
+    "file protocol gameplay completes",
+    "file audio effects stop on pause",
+    "failed level script retries and waits before initialization",
+    "unavailable level data shows an explicit recovery message",
+    "missing art keeps canvas colored and game operational",
+    "fallback gameplay wins with no uncaught exception",
+    "normal browser console has zero errors",
+    "all normal contexts have zero uncaught exceptions",
+    "all captured canvases >=90% colored"
+  ],
+  "consoleErrors": [],
+  "pageErrors": [],
+  "networkFailures": [],
+  "screenshots": [
+    "screen_initial.png",
+    "screen_gameplay.png",
+    "screen_win.png",
+    "screen_stage2.png",
+    "screen_mobile.png",
+    "screen_file.png"
+  ],
+  "pixels": {
+    "initial": 0.9999332119004251,
+    "stage2": 0.9999362477231329,
+    "mobile": 0.9998916428280888,
+    "fallback": 1
+  },
+  "performance": {
+    "observedFps": 60.00600060006,
+    "renderP95Ms": 0.20000004768371582
+  },
+  "result": "passed",
+  "checkedAt": "2026-10-19T12:39:56.086Z"
+}

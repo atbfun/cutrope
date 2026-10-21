@@ -1,0 +1,19 @@
+✔ swipes intersect crossing, endpoint, collinear and tiny segments correctly (2.648ms)
+✔ first original level: cut the actual rope, collect all stars, feed Om Nom (8.87775ms)
+✔ slow swipes composed of subpixel samples still cut the crossed rope (2.469042ms)
+✔ restarting creates independent star, rope and bubble states (0.572709ms)
+✔ automatic hooks catch once and cannot reattach after a cut (0.867708ms)
+✔ bubble floats, then popping restores gravity (1.071625ms)
+✔ spikes break candy and emit exactly one terminal event (1.261583ms)
+✔ size-two spikes use the original 134px sprite collision span (0.478208ms)
+✔ timed stars expire after original timeout plus three seconds (2.488375ms)
+✔ pumps only apply their impulse within the directional air corridor (0.594625ms)
+✔ all 50 original levels remain finite and have three stars (1894.474542ms)
+ℹ tests 11
+ℹ suites 0
+ℹ pass 11
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 2712.175334
